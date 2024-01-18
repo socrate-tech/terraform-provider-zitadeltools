@@ -20,7 +20,7 @@ func GetResource() *schema.Resource {
 			"jwt": {
 				Type: schema.TypeString,
 				// Sensitive: true,
-				Description: "The JWT token generated from the key and audience.",
+				Description: "The JWT token generated from the key and the audience.",
 				Computed:    true,
 			},
 		},
