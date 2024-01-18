@@ -52,15 +52,19 @@ func get(ctx context.Context, d *schema.ResourceData, m interface{}) diag.Diagno
 	tflog.Info(ctx, "started get")
 
 	key := d.Get("key").(string)
-	tflog.Info(ctx, fmt.Sprintf("key: %s", key))
+	// tflog.Info(ctx, fmt.Sprintf("key: %s", key))
 	audience := d.Get("audience").(string)
 
 	jwt, err := key2JWT(key, audience)
+	// tflog.Info(ctx, fmt.Sprintf("jwt: %s", jwt))
 
 	if err != nil {
 		return diag.Errorf("error generating jwt: %v", err.Error())
 	}
 
+	if err := d.Set("jwt", jwt); err != nil {
+		return diag.Errorf("error while setting jwt value '%s': %v", jwt, err)
+	}
 	d.Set("jwt", jwt)
 
 	return nil
