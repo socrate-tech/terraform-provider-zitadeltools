@@ -1,6 +1,6 @@
 <p align="center">
     <img alt="terraform-provider-boilerplate Logo" src="https://www.freelogovectors.net/wp-content/uploads/2022/01/terra-form-logo-freelogovectors.net_.png" width="150" />
-    <h1 align="center">Terraform Provider Boilerplate.</h1>
+    <h1 align="center">Zitadel Tools Provider.</h1>
     <p align="center">Start your terraform provider project in seconds
 with a professional template for building fast, robust, and adaptable terraform providers with a focus on performance and best practices</p>
     <p align="center">
