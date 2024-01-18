@@ -26,5 +26,5 @@ jobs:
           goos: ${{ matrix.goos }}
           goarch: ${{ matrix.goarch }}
           goversion: "https://dl.google.com/go/go1.18.linux-amd64.tar.gz"
-          binary_name: "terraform-provider-template"
+          binary_name: "zitadel-tools-provider"
           extra_files: LICENSE README.md
