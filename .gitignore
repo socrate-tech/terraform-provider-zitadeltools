@@ -14,3 +14,7 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 .idea
+zitadel-tools-provider
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
